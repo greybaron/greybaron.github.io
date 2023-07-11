@@ -1,0 +1,102 @@
+
+
+h1 {
+    background-color: red;
+    animation: fuck 3s linear infinite;
+    /* width: 100%; */
+}
+
+p {
+    font-weight: bold;
+    color: yellow;
+    font-size: 30px;
+}
+p:hover {
+    font-style: italic;
+    font-size: 50px;
+    animation: ok 1s linear;
+}
+
+@-moz-keyframes ok {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes ok {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes ok {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+
+@-moz-keyframes fuck {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    50% {
+        -moz-transform: translateX(-100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes fuck {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    50% {
+        -webkit-transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes fuck {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    50% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+
+body {
+    background: radial-gradient(#a400ff 0, #3b3b3b 10%, #d6d2d200 15%, #0b243a 50%, #d6d2d2 65%, #26483f 80%, #d6d2d200 95%),
+                repeating-linear-gradient(45deg, #a78b4178, #a548a07a 50px),
+                repeating-linear-gradient(135deg, #634610, #71b737 50px);
+    width: 20%;
+    height: 20%;
+    animation: ok 2s linear infinite;
+  }
